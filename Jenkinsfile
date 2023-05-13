@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Docker') {
             steps {
-                sh './olaunicamp.sh'
+                sh 'olaunicamp.sh'
             }
         }
 }
