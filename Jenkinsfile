@@ -1,9 +1,9 @@
 pipeline {
-    agent { label "linux" }
+    agent any
     stages {
         stage('Docker') {
             steps {
-                sh 'docker --info'
+                sh 'docker build --tag olaunicamp .'
             }
         }
 }
