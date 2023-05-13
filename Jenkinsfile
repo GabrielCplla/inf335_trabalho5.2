@@ -1,9 +1,9 @@
 pipeline {
-    agent { dockerfile true }
+    agent { agent "linux" }
     stages {
         stage('Docker') {
             steps {
-                sh 'test'
+                sh 'docker --info'
             }
         }
 }
